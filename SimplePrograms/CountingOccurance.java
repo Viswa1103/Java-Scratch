@@ -19,5 +19,7 @@ public class CountingOccurance {
 
         }
         System.out.println(count);
+        sc.close();
+
     }
 }

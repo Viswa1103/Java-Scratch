@@ -18,6 +18,8 @@ public class Reverse {
 
         }
         System.out.println(ans);
+        sc.close();
+
     }
 
 }
