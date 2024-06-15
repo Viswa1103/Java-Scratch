@@ -1,5 +1,6 @@
 package LinearSearch;
 
+// https://leetcode.com/problems/richest-customer-wealth/
 import java.util.Scanner;
 
 public class MaxWealth {
@@ -14,6 +15,7 @@ public class MaxWealth {
         }
         int res = maximumWealth(arr);
         System.out.println(res);
+        sc.close();
     }
 
     static int maximumWealth(int[][] arr) {

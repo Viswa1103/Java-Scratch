@@ -13,6 +13,7 @@ public class evendigits {
         }
         int res = findNumbers(arr);
         System.out.println(res);
+        sc.close();
 
     }
 
