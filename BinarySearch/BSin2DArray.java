@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class BSin2DArray {
     public static void main(String[] args) {
         int[][] arr = {
-                { 1, 2, 3, 4 },
-                { 5, 6, 7, 8 },
-                { 9, 10, 11, 12 },
-                { 13, 14, 15, 16 }
+                { 10, 20, 30, 40 },
+                { 15, 25, 35, 45 },
+                { 28, 29, 37, 49 },
+                { 33, 34, 38, 50 }
         };
 
-        System.out.println(Arrays.toString(search(arr, 14)));
+        System.out.println(Arrays.toString(search(arr, 49)));
 
     }
 
