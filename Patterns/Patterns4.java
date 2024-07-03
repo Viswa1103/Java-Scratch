@@ -76,8 +76,49 @@ public class Patterns4 {
                 System.out.print(" ");
             }
             int c = i < n ? n + i - 1 : 2 * n - ((i - n) + 1);
+            int uf = i;
+            int us = 2;
+            int lf = 2 * n - i;
+            int ls = 2;
             for (int k = s + 1; k <= c; k++) {
-                System.out.print("*");
+                if (i <= n) {
+                    if (k <= n) {
+                        if (k == s + 1 || k == c) {
+                            System.out.print(i);
+                            uf--;
+                        } else {
+                            System.out.print(uf);
+                            uf--;
+                        }
+                    } else if (k > n) {
+                        if (k == c) {
+                            System.out.print(i);
+                            us--;
+                        } else {
+                            System.out.print(us);
+                            us++;
+                        }
+                    }
+                } else if (i > n) {
+                    if (k <= n) {
+                        if (k == s + 1) {
+                            System.out.print(2 * n - i);
+                            lf--;
+                        } else {
+                            System.out.print(lf);
+                            lf--;
+                        }
+                    } else if (k > n) {
+                        if (k == c) {
+                            System.out.print(2 * n - i);
+                            ls--;
+
+                        } else {
+                            System.out.print(ls);
+                            ls++;
+                        }
+                    }
+                }
             }
             System.out.println();
         }
