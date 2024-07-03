@@ -43,7 +43,7 @@ package Patterns;
 
 public class Patterns4 {
     public static void main(String[] args) {
-        pattern16(5);
+        pattern17(5);
 
     }
 
@@ -64,6 +64,20 @@ public class Patterns4 {
                 System.out.print(value + "   "); // Print the current element with spaces
                 // Update the value using binomial coefficient logic
                 value = value * (i - k - 1) / (k + 1);
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern17(int n) {
+        for (int i = 1; i <= 2 * n - 1; i++) {
+            int s = i < n ? n - i : i - n;
+            for (int j = 1; j <= s; j++) {
+                System.out.print(" ");
+            }
+            int c = i < n ? n + i - 1 : 2 * n - ((i - n) + 1);
+            for (int k = s + 1; k <= c; k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
