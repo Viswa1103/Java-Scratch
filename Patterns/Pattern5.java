@@ -35,7 +35,7 @@ package Patterns;
 
 public class Pattern5 {
     public static void main(String[] args) {
-        pattern25(5);
+        pattern2(3);
 
     }
 
@@ -106,6 +106,21 @@ public class Pattern5 {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern2(int n) {
+        for (int i = 1; i <= n; i++) {
+            int num = i;
+
+            for (int j = 1; j <= n; j++) {
+                System.out.print(num + " ");
+                num++;
+                if (num > n) {
+                    num = 1;
                 }
             }
             System.out.println();
