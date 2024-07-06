@@ -93,11 +93,12 @@ public class Pattern6 {
             for (int j = 1; j <= sp; j++) {
                 System.out.print(" ");
             }
-            int c = i <= n ? n + i - 1 : 2 * n - ((i - n) + 1);
-            for (int k = i <= n ? sp + i : 5; k <= c; k++) {
+            int c = i <= n ? i : 2 * n - i;
+            for (int k = 1; k <= c; k++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
+
 }
