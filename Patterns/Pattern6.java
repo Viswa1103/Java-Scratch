@@ -41,7 +41,7 @@ package Patterns;
 
 public class Pattern6 {
     public static void main(String[] args) {
-        pattern28(5);
+        pattern30(5);
 
     }
 
@@ -96,6 +96,30 @@ public class Pattern6 {
             int c = i <= n ? i : 2 * n - i;
             for (int k = 1; k <= c; k++) {
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern30(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= 2 * n - 2 * i; j++) {
+                if (i == n)
+                    break;
+                System.out.print(" ");
+            }
+            int uf = i;
+            int us = 2;
+            for (int k = n - i + 1; k <= n + i - 1; k++) {
+                if (k <= n) {
+                    System.out.print(uf + " ");
+                    uf--;
+                } else {
+                    System.out.print(us + " ");
+                    us++;
+
+                }
+
             }
             System.out.println();
         }
