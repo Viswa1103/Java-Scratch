@@ -1,6 +1,6 @@
 package MazeProblem;
 
-public class path {
+public class diagonalpathalso {
     public static void main(String[] args) {
         path("", 3, 3);
 
@@ -16,6 +16,9 @@ public class path {
         }
         if (c > 1) {
             path(p + 'R', r, c - 1);
+        }
+        if (r > 1 && c > 1) {
+            path(p + 'D', r - 1, c - 1);
         }
 
     }
