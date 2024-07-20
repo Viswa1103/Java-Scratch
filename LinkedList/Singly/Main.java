@@ -1,4 +1,4 @@
-package LinkedList.Singely;
+package LinkedList.Singly;
 
 public class Main {
     public static void main(String[] args) {
