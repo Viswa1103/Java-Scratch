@@ -15,6 +15,27 @@ public class LL {
         System.out.println("End");
     }
 
+    public void deleteFirst() {
+
+        head = head.next;
+        head.pre = null;
+    }
+
+    public void deleteLast() {
+        tail = tail.pre;
+        tail.next = null;
+    }
+
+    public void deleteAtPosition(int index) {
+        Node temp = head;
+        for (int i = 1; i < index - 1; i++) {
+            temp = temp.next;
+        }
+
+        temp.next = temp.next.next;
+        temp.next.pre = temp;
+    }
+
     public void insertFirst(int value) {
         Node node = new Node(value);
         node.next = head;

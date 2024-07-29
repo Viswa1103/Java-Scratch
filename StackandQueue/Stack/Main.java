@@ -1,7 +1,5 @@
 package StackandQueue.Stack;
 
-import Assignment.Daytwo.sort;
-
 public class Main {
     public static void main(String[] args) {
         DyanamicStack s = new DyanamicStack(5);
