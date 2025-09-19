@@ -6,7 +6,7 @@ public class oneton {
     }
 
     static void fun(int n) {
-        int num = 1;
+        // int num = 1;
         if (n == 1) {
             System.out.println(n);
             return;

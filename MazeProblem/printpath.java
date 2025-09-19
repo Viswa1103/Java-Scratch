@@ -2,7 +2,7 @@ package MazeProblem;
 
 import java.util.Arrays;
 
-import Recursion.Array.sortedarray;
+// import Recursion.Array.sortedarray;
 
 public class printpath {
     public static void main(String[] args) {

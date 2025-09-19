@@ -3,7 +3,7 @@ package Restart.Searching;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import StackandQueue.Stack.stack;
+// import StackandQueue.Stack.stack;
 
 public class binary {
     public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class binary {
         int n = sc.nextInt();
         Arrays.sort(arr);
         se(arr, n);
+        sc.close();
 
     }
 

@@ -9,6 +9,7 @@ public class fibo {
         int n = sc.nextInt();
 
         System.out.println(fact(n));
+        sc.close();
     }
 
     private static int fact(int n) {

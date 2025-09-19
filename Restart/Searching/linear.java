@@ -8,6 +8,7 @@ public class linear {
         int[] arr = new int[] { 33, 55, 66, 77, 888, 222, 11 };
         int n = sc.nextInt();
         li(arr, n);
+        sc.close();
     }
 
     public static void li(int[] arr, int n) {

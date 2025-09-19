@@ -1,6 +1,6 @@
 package LinkedList.Circular;
 
-import SimplePrograms.prime;
+// import SimplePrograms.prime;
 
 public class CLL {
 

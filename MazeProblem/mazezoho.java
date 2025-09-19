@@ -2,7 +2,7 @@ package MazeProblem;
 
 import java.util.Scanner;
 
-import StackandQueue.Stack.stack;
+// import StackandQueue.Stack.stack;
 
 public class mazezoho {
 
@@ -22,6 +22,7 @@ public class mazezoho {
         } else {
             path("", 0, 0, arr);
         }
+        sc.close();
 
     }
 

@@ -18,6 +18,7 @@ public class zohomaze {
         } else
 
             path("", maze, 0, 0);
+            sc.close();
 
     }
 

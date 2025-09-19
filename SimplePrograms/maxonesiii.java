@@ -17,6 +17,7 @@ public class maxonesiii {
         for (int i : res) {
             System.out.print(i + " ");
         }
+        sc.close();
 
     }
 
