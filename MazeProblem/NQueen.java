@@ -3,7 +3,7 @@ package MazeProblem;
 public class NQueen {
     public static void main(String[] args) {
 
-        int n = 4;
+        int n = 5;
         boolean[][] board = new boolean[n][n];
         System.out.println(queen(board, 0));
 
